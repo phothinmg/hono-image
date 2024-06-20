@@ -3,15 +3,51 @@ import { memo } from "../../deps/mod.ts";
 import imageToUri from "./mod.ts";
 
 /**
+ * 
+ * ***
+ * 
+ * 
  * Image component for Hono JSX
+ * ---
+ * 
+ * 
+ * 
+ * ***
+ * 
+ * Render image as data:uri form local files and from links start with "http" and "data"
  * ---
  * 
  * ***
  * 
- * Render image as data:uri form local files and from links start with
+ *  **Parameters**
  * 
- * "http" and "data"
+ * - src : link to image
  * 
+ * - height : Height of image / default  100
+ * 
+ * - width : Width of image / default  200
+ * 
+ * 
+ * ***
+ * 
+ * **Available image types to convert to data:uri**
+ * 
+ * **.png  : image/png**
+ *      
+ * **.jpg  : image/jpeg**
+ *     
+ * **.jpeg : image/jpeg** 
+ *   
+ * **.bm   : image/bmp**
+ *      
+ * **.bmp  : image/bmp**
+ *     
+ * **.webp : image/webp**  
+ *   
+ * **.ico  : image/x-ico** 
+ *   
+ * **.svg  : image/svg+xml** 
+ *  
  * ***
  * 
  * **Example**

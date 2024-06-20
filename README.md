@@ -87,3 +87,36 @@ export default app;
 ```
 
 ***
+
+## Socila Icons
+
+#### Component
+
+#### `<SocialIcon />`
+
+#### Types
+
+```ts
+FC<{
+  // name of social site
+  name:
+    | "github"
+    | "twitter"
+    | "discord"
+    | "facebook"
+    | "linkedin"
+    | "bitbucket"
+    | "gitlab"
+    | "wechat"
+    | "whatsapp"
+    | "wordpress";
+  href: string; // link to socila profile
+  size?: number; // default 24
+  stoke?: number; // default 2
+  color?: string; // "currentColor"
+}>
+
+```
+
+***
+

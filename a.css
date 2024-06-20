@@ -1,0 +1,19 @@
+:root{
+    --bg: white;
+    --tx: black;
+}
+
+html[data-theme="light"]{
+    --bg: white;
+    --tx: black;
+}
+
+
+html[data-theme="dark"]{
+    --bg: black;
+    --tx: white;
+}
+
+@media (prefers-color-scheme: dark){
+    
+}
