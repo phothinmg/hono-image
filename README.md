@@ -75,7 +75,6 @@ width?: number // default 200
 
 **Example**
 
-
 ```tsx
 const app = new Hono();
 
@@ -86,7 +85,7 @@ app.get("/", (c) => {
 export default app;
 ```
 
-***
+---
 
 ## Socila Icons
 
@@ -112,11 +111,26 @@ FC<{
     | "wordpress";
   href: string; // link to socila profile
   size?: number; // default 24
-  stoke?: number; // default 2
+  storke?: number; // default 2
   color?: string; // "currentColor"
-}>
-
+}>;
 ```
 
-***
+#### Example
 
+```tsx
+const app = new Hono();
+
+app.get("/", (c: { html: (arg0: JSX.Element) => any }) => {
+  return c.html(
+    <SocialIcon
+      name={"github"}
+      href={"https://github.com"}
+      color="#585858"
+      size={36}
+    />
+  );
+});
+```
+
+---

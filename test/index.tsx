@@ -26,7 +26,7 @@ const App: FC = () => {
           <SocialIcon
             name={"twitter"}
             href={"https://github.com"}
-            color="red"
+            color={"red"}
             size={52}
           />
           <br /> <br />
