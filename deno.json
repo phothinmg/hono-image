@@ -5,5 +5,8 @@
   "compilerOptions": {
     "jsx": "precompile",
     "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx"
+  },
+  "imports": {
+    
   }
 }

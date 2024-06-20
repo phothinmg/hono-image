@@ -1,7 +1,6 @@
 import { SocialIcon } from "../src/mod.ts";
 import { Hono, html } from "../src/deps/mod.ts";
 import type { FC } from "../src/deps/mod.ts";
-import { JSX } from "jsr:@hono/hono@^4.4.7/jsx/jsx-runtime";
 
 const app = new Hono();
 
@@ -64,8 +63,8 @@ const App: FC = () => {
   );
 };
 
-// deno-lint-ignore no-explicit-any
-app.get("/", (c: { html: (arg0: JSX.Element) => any }) => {
+
+app.get("/", (c) => {
   return c.html(<App />);
 });
 

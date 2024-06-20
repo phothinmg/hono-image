@@ -13,4 +13,6 @@ export { html } from "jsr:@hono/hono@^4.4.7/html";
 export type { FC } from "jsr:@hono/hono@^4.4.7/jsx";
 export { memo, useState, useEffect } from "jsr:@hono/hono@^4.4.7/jsx";
 
-// ImageMagick
+
+
+
