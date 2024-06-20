@@ -1,4 +1,4 @@
-import { html } from "../../deps/mod.ts";
+import { html } from "../deps/mod.ts";
 
 export const icons = [
   {

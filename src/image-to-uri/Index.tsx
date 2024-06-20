@@ -1,5 +1,5 @@
-import type { FC } from "../../deps/mod.ts";
-import { memo } from "../../deps/mod.ts";
+import type { FC } from "../deps/mod.ts";
+import { memo } from "../deps/mod.ts";
 import imageToUri from "./mod.ts";
 
 /**

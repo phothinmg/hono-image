@@ -1,6 +1,6 @@
-import type { FC } from "../../deps/mod.ts";
+import type { FC } from "../deps/mod.ts";
 import { icons } from "./iconsArray.ts";
-import { html } from "../../deps/mod.ts";
+import { html } from "../deps/mod.ts";
 
 /**
  * 
@@ -10,6 +10,7 @@ import { html } from "../../deps/mod.ts";
  * SocialIcon component
  * ---
  *  **Parameters**
+ * 
  * - name : Name of social
  * 
  * - href : Link to social profile

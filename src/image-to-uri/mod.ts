@@ -1,5 +1,5 @@
-import { extname, encodeBase64 } from "../../deps/mod.ts";
-import { readFile } from "../../util/mod.ts";
+import { extname, encodeBase64 } from "../deps/mod.ts";
+import { readFile } from "../util/mod.ts";
 
 
 const extType: { name: string; type: string }[] = [

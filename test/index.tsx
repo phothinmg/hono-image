@@ -1,6 +1,6 @@
 import { SocialIcon } from "../src/mod.ts";
-import { Hono, html } from "../deps/mod.ts";
-import type { FC } from "../deps/mod.ts";
+import { Hono, html } from "../src/deps/mod.ts";
+import type { FC } from "../src/deps/mod.ts";
 import { JSX } from "jsr:@hono/hono@^4.4.7/jsx/jsx-runtime";
 
 const app = new Hono();
