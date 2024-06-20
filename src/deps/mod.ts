@@ -14,11 +14,3 @@ export type { FC } from "jsr:@hono/hono@^4.4.7/jsx";
 export { memo, useState, useEffect } from "jsr:@hono/hono@^4.4.7/jsx";
 
 // ImageMagick
-export {
-  ImageMagick,
-  initialize,
-  MagickFormat,
-  MagickImage,
-} from "https://deno.land/x/imagemagick_deno@0.0.26/mod.ts";
-
-export type { IMagickImage } from "https://deno.land/x/imagemagick_deno@0.0.26/mod.ts";

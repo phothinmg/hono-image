@@ -2,13 +2,6 @@
   "name": "@ptm/hono-image",
   "version": "0.1.0",
   "exports": "./src/mod.ts",
-  "publish": {
-    "include": [
-      "LICENSE",
-      "README.md",
-      "deno.json"
-    ]
-  },
   "compilerOptions": {
     "jsx": "precompile",
     "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx"
