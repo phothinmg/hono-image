@@ -7,11 +7,6 @@
     "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx",
     "allowJs": true
   },
-  "imports": {},
-  "publish": {
-    "exclude": ["test/*", "images/*"],
-    "include": ["src/*", "README.md", "LICENSE", "deno.json"]
-  },
   "fmt": {
     "useTabs": true,
     "lineWidth": 80,
