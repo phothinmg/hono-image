@@ -1,3 +1,5 @@
+// Copyright 2024 the @phothinmg. All rights reserved. Apache License, Version 2.0.
+
 import { icons } from "./iconsArray.ts";
 import { html } from "../deps/mod.ts";
 import type { HtmlEscapedString } from "../deps/mod.ts";

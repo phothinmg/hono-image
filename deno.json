@@ -9,7 +9,8 @@
   },
   "imports": {},
   "publish": {
-    "exclude": ["test/*"]
+    "exclude": ["test/*", "images/*"],
+    "include": ["src/*", "README.md", "LICENSE", "deno.json"]
   },
   "fmt": {
     "useTabs": true,
@@ -20,5 +21,6 @@
     "proseWrap": "preserve",
     "include": ["src/"],
     "exclude": ["test", "npm/"]
-  }
+  },
+  "lock": false
 }

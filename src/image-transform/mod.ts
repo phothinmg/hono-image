@@ -1,3 +1,5 @@
+// Copyright 2024 the @phothinmg. All rights reserved. Apache License, Version 2.0.
+
 import type { IMagickImage } from "../deps/mod.ts";
 import { ImageMagick, MagickFormat, extname } from "../deps/mod.ts";
 import { initialize } from "../helpers/image-magick/init.ts";
