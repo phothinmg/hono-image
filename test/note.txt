@@ -56,3 +56,13 @@ const loadImageData = async (filePath: string) => {
   }
   return await Deno.readFile(filePath);
 };
+
+/// <reference types="..." />
+
+$ deno doc --html --name="My library" ./mod.ts
+
+$ deno doc --html --name="My library" --output=./documentation/ ./mod.ts
+
+$ deno doc --html --name="My library" ./sub1/mod.ts ./sub2/mod.ts
+
+deno doc --html --name="Hono Image" --output=./docs/ ./src/mod.ts

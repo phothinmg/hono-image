@@ -1,6 +1,6 @@
 import type { IMagickImage } from "../deps/mod.ts";
 import { ImageMagick, MagickFormat, extname } from "../deps/mod.ts";
-import { initialize } from "../deps/image-magick/init.ts";
+import { initialize } from "../helpers/image-magick/init.ts";
 
 export const extArray: Array<{ name: string; ext: string }> = [
   {
@@ -24,6 +24,27 @@ export const extArray: Array<{ name: string; ext: string }> = [
     ext: ".webp",
   },
 ];
+
+/**
+ * ### Type definition for `transformImage` function .
+ * 
+ * ***
+ * 
+ * 1. imagePath - The path to the image file.
+ * 2. inputExtension - The extension of the input image file.
+ * 
+ * ```
+ * ".png" | ".jpg" | ".jpeg" | ".webp";
+ * ```
+ * 3. outputExtension - The extension of the output image file.
+ * 
+ * ```
+ * ".png" | ".jpg" | ".jpeg" | ".webp" | ".ico";
+ * ```
+ * 4. outputDirectory - The directory where the transformed image will be saved.
+ * 5. outputHeight - The height of the transformed image. Defaults to 100.
+ * 6. outputWidth - The width of the transformed image. Defaults to 200.
+ */
 export type TransformImageType = {
   imagePath: string;
   inputExtension: ".png" | ".jpg" | ".jpeg" | ".webp";
@@ -34,7 +55,9 @@ export type TransformImageType = {
   outputFileName?: string;
 };
 /**
- * Transforms an image file to a different format and size.
+ * ### Transforms an image file to a different format and size.
+ * 
+ * ***
  *
  * @param imagePath - The path to the image file.
  * @param inputExtension - The extension of the input image file.

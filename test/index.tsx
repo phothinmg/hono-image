@@ -1,4 +1,5 @@
-import { SocialIcon } from "../src/mod.ts";
+import { SocialIcon } from "../src/social-icon/social_icons.ts";
+import { ImageToUri } from "../src/image-to-uri/mod.ts";
 import { Hono, html } from "../src/deps/mod.ts";
 import type { FC } from "../src/deps/mod.ts";
 
@@ -22,37 +23,33 @@ const App: FC = () => {
       </head>
       <body>
         <main class="container">
-          <SocialIcon
-            name={"twitter"}
-            href={"https://github.com"}
-            color={"red"}
-            size={52}
-          />
+          <SocialIcon name={"github"} href={"https://github.com"} size={52} />
           <br /> <br />
+          <ImageToUri src={"./images/a.png"} height={50} width={150} />
           <a
-          href="#"
-          data-theme-switcher="auto"
-          style="margin-right: 18px; text-decoration: none"
-          data-tooltip="System"
-        >
-          System
-        </a>
-        <a
-          href="#"
-          data-theme-switcher="light"
-          style="margin-right: 18px; text-decoration: none"
-          data-tooltip="Light"
-        >
-          light
-        </a>
-        <a
-          href="#"
-          data-theme-switcher="dark"
-          style="margin-right: 18px; text-decoration: none"
-          data-tooltip="Dark"
-        >
-          dark
-        </a>
+            href="#"
+            data-theme-switcher="auto"
+            style="margin-right: 18px; text-decoration: none"
+            data-tooltip="System"
+          >
+            System
+          </a>
+          <a
+            href="#"
+            data-theme-switcher="light"
+            style="margin-right: 18px; text-decoration: none"
+            data-tooltip="Light"
+          >
+            light
+          </a>
+          <a
+            href="#"
+            data-theme-switcher="dark"
+            style="margin-right: 18px; text-decoration: none"
+            data-tooltip="Dark"
+          >
+            dark
+          </a>
         </main>
         {html`
           <script src="https://cdn.jsdelivr.net/gh/phothinmg/master-repo@main/theme.min.js"></script>
@@ -62,7 +59,6 @@ const App: FC = () => {
     </html>
   );
 };
-
 
 app.get("/", (c) => {
   return c.html(<App />);

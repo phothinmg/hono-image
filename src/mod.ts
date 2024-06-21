@@ -1,17 +1,15 @@
-/**
- * # Hono Image
+/// <reference types="./mod.d.ts" />
 
-    ## About
+// Copyright 2024 the @phothinmg. All rights reserved. Apache License, Version 2.0.
 
-    Related components , functions and middlewares of image for [HONO](https://hono.dev/) , that supported
-    any JavaScript runtime but this package only focus on [DENO](https://deno.com/).
+import { icoGenerator } from "./ico-generator/mod.ts";
+import { imageToUri, ImageToUri } from "./image-to-uri/mod.ts";
+import { transformImage } from "./image-transform/mod.ts";
+import { SocialIcon } from "./social-icon/social_icons.ts";
 
-    The package is under developing state now.
-    
- */
+import type { TransformImageType } from "./image-transform/mod.ts";
+import type { SocialIconType } from "./social-icon/social_icons.ts";
+import type { ImageToUriType } from './image-to-uri/mod.ts';
 
-import imageToUri from "./image-to-uri/mod.ts";
-import ImageToUri from "./image-to-uri/Index.tsx";
-import {SocialIcon} from "./social-icon/Index.tsx";
-
-export { imageToUri, ImageToUri, SocialIcon };
+export { icoGenerator, imageToUri, ImageToUri, transformImage, SocialIcon };
+export type { TransformImageType, SocialIconType, ImageToUriType };

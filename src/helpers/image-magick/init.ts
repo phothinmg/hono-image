@@ -1,6 +1,8 @@
-import { initializeImageMagick } from "npm:@imagemagick/magick-wasm";;
+/* This code was copy from https://deno.land/x/imagemagick_deno@0.0.26/mod.ts for jsr import issue */
 
-export async function initialize() {
+import { initializeImageMagick } from "../../deps/mod.ts";
+
+export async function initialize(): Promise<void> {
   const wasmUrl = new URL(import.meta.resolve("./magick.wasm"));
 
   if (wasmUrl.protocol === "file:") {

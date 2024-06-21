@@ -12,6 +12,7 @@ export { compress } from "jsr:@hono/hono@^4.4.7/compress";
 export { html } from "jsr:@hono/hono@^4.4.7/html";
 export type { FC } from "jsr:@hono/hono@^4.4.7/jsx";
 export { memo, useState, useEffect } from "jsr:@hono/hono@^4.4.7/jsx";
+export type { HtmlEscapedString } from "jsr:@hono/hono@^4.4.7/utils/html";
 
 export type {
   HTMLCanvasElement,
@@ -19,4 +20,5 @@ export type {
 } from "npm:evt@2.5.7/lib/types/dom.d.ts";
 
 export type { IMagickImage } from "npm:@imagemagick/magick-wasm@0.0.29";
-export { ImageMagick, MagickFormat } from "npm:@imagemagick/magick-wasm@0.0.29";
+export { ImageMagick, MagickFormat, initializeImageMagick } from "npm:@imagemagick/magick-wasm@0.0.29";
+

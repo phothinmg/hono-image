@@ -81,6 +81,7 @@ export async function generator({
     });
   });
 }
+
 export interface IcoType {
   format: string;
   fpath: string;
@@ -96,7 +97,7 @@ export interface IconOutType {
  * Generates an array of objects representing the different sizes and formats required for browser icons.
  * @returns {Promise<IcoArrayType>} An array of objects representing the different sizes and formats required for browser icons.
  */
-export async function browserIco(): Promise<IconOutType> {
+export async function generateIco(): Promise<IconOutType> {
   // Create a temporary directory for storing the output files
   const outDir = await Deno.makeTempDir({
     dir: "./",

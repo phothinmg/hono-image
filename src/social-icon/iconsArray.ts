@@ -1,6 +1,10 @@
 import { html } from "../deps/mod.ts";
-
-export const icons = [
+import type { HtmlEscapedString } from "../deps/mod.ts";
+export interface IconsType {
+  name: string;
+  svgs: (HtmlEscapedString | Promise<HtmlEscapedString>)[];
+}
+export const icons: Array<IconsType> = [
   {
     name: "github",
     svgs: [
