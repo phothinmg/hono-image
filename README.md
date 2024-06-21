@@ -121,7 +121,7 @@ FC<{
 ```tsx
 const app = new Hono();
 
-app.get("/", (c: { html: (arg0: JSX.Element) => any }) => {
+app.get("/", (c) => {
   return c.html(
     <SocialIcon
       name={"github"}
@@ -133,9 +133,111 @@ app.get("/", (c: { html: (arg0: JSX.Element) => any }) => {
 });
 ```
 
----
+***
 
-### LICENSE
+## Ico Generator
+
+#### function
+
+#### `icoGenerator`
+
+Generate ico files packge form given supported image extensions.
+
+**Supported Image extensions**
+
+```
+[".png", ".jpg", ".jpeg", ".webp", ".gif", ".avif"]
+```
+
+**Generated Package**
+
+Function will generate directory with prefix `honoimage_ico_` .
+
+<pre>
+
+1. favicon.ico
+2. favicon-16x16.png
+3. android-chrome-192x192.png
+4. apple-touch-icon.png
+5. android-chrome-512x512.png
+6. site.webmanifest
+7. example.txt
+
+</pre>
+
+**Example**
+
+```ts
+const image = "./image.png";
+await icoGenerator(image);
+```
+
+**types**
+
+```ts
+filePath: string
+```
+
+
+***
+
+## Image Transform
+
+#### function
+
+
+#### `transformImage`
+
+Transforms an image file to a different format and size.
+
+**Supported extensions for input**
+
+```
+".png" | ".jpg" | ".jpeg" | ".webp"
+```
+
+**Supported extensions for input**
+
+```
+".png" | ".jpg" | ".jpeg" | ".webp" | ".ico"
+```
+
+**Example**
+
+```ts
+
+transformImage({
+  imagePath: "./images/a.png",
+  inputExtension: ".png",
+  outputExtension: ".jpeg",
+});
+
+```
+
+**types**
+
+
+```ts
+
+imagePath: string;
+inputExtension: ".png" | ".jpg" | ".jpeg" | ".webp";
+outputExtension: ".png" | ".jpg" | ".jpeg" | ".webp" | ".ico";
+outputDirectory?: string;
+outputWidth?: number;
+outputHeight?: number;
+outputFileName?: string;
+
+```
+
+
+
+
+
+***
+
+
+
+## LICENSE
 
 
 

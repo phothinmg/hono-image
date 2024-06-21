@@ -1,6 +1,6 @@
 {
   "name": "@ptm/hono-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "exports": "./src/mod.ts",
   "compilerOptions": {
     "jsx": "precompile",
@@ -11,7 +11,6 @@
   "publish": {
     "exclude": ["test/*"]
   },
-  "lock": false,
   "fmt": {
     "useTabs": true,
     "lineWidth": 80,

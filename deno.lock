@@ -1,0 +1,44 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@hono/hono@^4.4.7": "jsr:@hono/hono@4.4.7",
+      "npm:@imagemagick/magick-wasm@0.0.29": "npm:@imagemagick/magick-wasm@0.0.29",
+      "npm:evt@2.5.7": "npm:evt@2.5.7"
+    },
+    "jsr": {
+      "@hono/hono@4.4.7": {
+        "integrity": "069f612a089362e59786ea925d19fa834096fe92bf4f4b8dd572c508a3a708aa"
+      }
+    },
+    "npm": {
+      "@imagemagick/magick-wasm@0.0.29": {
+        "integrity": "sha512-kK8X0hfQIxfiOqSkDym+Nh542ACeJqM0yWQnWn77SM8CNST4lTeHmVCBNvDTRzpxKoDCcfoZQYRh9CasZLD6Iw==",
+        "dependencies": {}
+      },
+      "evt@2.5.7": {
+        "integrity": "sha512-dr7Wd16ry5F8WNU1xXLKpFpO3HsoAGg8zC48e08vDdzMzGWCP9/QFGt1PQptEEDh8SwYP3EL8M+d/Gb0kgUp6g==",
+        "dependencies": {
+          "minimal-polyfills": "minimal-polyfills@2.2.3",
+          "run-exclusive": "run-exclusive@2.2.19",
+          "tsafe": "tsafe@1.7.2"
+        }
+      },
+      "minimal-polyfills@2.2.3": {
+        "integrity": "sha512-oxdmJ9cL+xV72h0xYxp4tP2d5/fTBpP45H8DIOn9pASuF8a3IYTf+25fMGDYGiWW+MFsuog6KD6nfmhZJQ+uUw==",
+        "dependencies": {}
+      },
+      "run-exclusive@2.2.19": {
+        "integrity": "sha512-K3mdoAi7tjJ/qT7Flj90L7QyPozwUaAG+CVhkdDje4HLKXUYC3N/Jzkau3flHVDLQVhiHBtcimVodMjN9egYbA==",
+        "dependencies": {
+          "minimal-polyfills": "minimal-polyfills@2.2.3"
+        }
+      },
+      "tsafe@1.7.2": {
+        "integrity": "sha512-dAPfQLhCfCRre5qs+Z5Q2a7s2CV7RxffZUmvj7puGaePYjECzWREJFd3w4XSFe/T5tbxgowfItA/JSSZ6Ma3dA==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {}
+}
