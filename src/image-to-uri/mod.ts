@@ -1,8 +1,9 @@
 import { extname, encodeBase64 } from "../deps/mod.ts";
 import { readFile } from "../util/mod.ts";
 
+export type ExtType = Array<{ name: string; type: string }>;
 
-const extType: { name: string; type: string }[] = [
+const extType: ExtType = [
   {
     name: ".png",
     type: "image/png",

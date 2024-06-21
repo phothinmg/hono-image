@@ -10,5 +10,6 @@
   "imports": {},
   "publish": {
     "exclude": ["test/*"]
-  }
+  },
+  "lock": false
 }

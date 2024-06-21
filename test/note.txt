@@ -47,3 +47,12 @@ Opera speed dial	195 x 195 pixels
 <!--UP TO 5 WEBSITE ADRESSES -->
 
 <meta name="thumbnail" content="path/to/image/thumb-150x150.png">
+
+
+const loadImageData = async (filePath: string) => {
+  const imageType = ensureImageType(filePath);
+  if (imageType === undefined) {
+    throw new Error(`Unsupported image type: ${extname(filePath)}`);
+  }
+  return await Deno.readFile(filePath);
+};

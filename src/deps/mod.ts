@@ -18,6 +18,5 @@ export type {
   CanvasRenderingContext2DSettings,
 } from "npm:evt@2.5.7/lib/types/dom.d.ts";
 
-
-
-
+export type { IMagickImage } from "npm:@imagemagick/magick-wasm@0.0.29";
+export { ImageMagick, MagickFormat } from "npm:@imagemagick/magick-wasm@0.0.29";
