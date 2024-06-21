@@ -6,8 +6,12 @@
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
       "jsr:@std/encoding@^0.224.3": "jsr:@std/encoding@0.224.3",
       "jsr:@std/path@^0.225.2": "jsr:@std/path@0.225.2",
+      "npm:@imagemagick/magick-wasm": "npm:@imagemagick/magick-wasm@0.0.29",
+      "npm:@imagemagick/magick-wasm@0.0.29": "npm:@imagemagick/magick-wasm@0.0.29",
+      "npm:evt@2.5.7": "npm:evt@2.5.7",
       "npm:imagemin-webp@8.0.0": "npm:imagemin-webp@8.0.0",
       "npm:imagemin@9.0.0": "npm:imagemin@9.0.0",
+      "npm:webp-converter@2.3.3": "npm:webp-converter@2.3.3",
       "npm:webpfy@1.0.9": "npm:webpfy@1.0.9"
     },
     "jsr": {
@@ -28,6 +32,10 @@
       }
     },
     "npm": {
+      "@imagemagick/magick-wasm@0.0.29": {
+        "integrity": "sha512-kK8X0hfQIxfiOqSkDym+Nh542ACeJqM0yWQnWn77SM8CNST4lTeHmVCBNvDTRzpxKoDCcfoZQYRh9CasZLD6Iw==",
+        "dependencies": {}
+      },
       "@nodelib/fs.scandir@2.1.5": {
         "integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",
         "dependencies": {
@@ -372,6 +380,14 @@
       "escape-string-regexp@1.0.5": {
         "integrity": "sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==",
         "dependencies": {}
+      },
+      "evt@2.5.7": {
+        "integrity": "sha512-dr7Wd16ry5F8WNU1xXLKpFpO3HsoAGg8zC48e08vDdzMzGWCP9/QFGt1PQptEEDh8SwYP3EL8M+d/Gb0kgUp6g==",
+        "dependencies": {
+          "minimal-polyfills": "minimal-polyfills@2.2.3",
+          "run-exclusive": "run-exclusive@2.2.19",
+          "tsafe": "tsafe@1.7.2"
+        }
       },
       "exec-buffer@3.2.0": {
         "integrity": "sha512-wsiD+2Tp6BWHoVv3B+5Dcx6E7u5zky+hUwOHjuH2hKSLR3dvRmX8fk8UD8uqQixHs4Wk6eDmiegVrMPjKj7wpA==",
@@ -815,6 +831,10 @@
         "integrity": "sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==",
         "dependencies": {}
       },
+      "minimal-polyfills@2.2.3": {
+        "integrity": "sha512-oxdmJ9cL+xV72h0xYxp4tP2d5/fTBpP45H8DIOn9pASuF8a3IYTf+25fMGDYGiWW+MFsuog6KD6nfmhZJQ+uUw==",
+        "dependencies": {}
+      },
       "minimatch@3.1.2": {
         "integrity": "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==",
         "dependencies": {
@@ -1058,6 +1078,12 @@
           "glob": "glob@7.2.3"
         }
       },
+      "run-exclusive@2.2.19": {
+        "integrity": "sha512-K3mdoAi7tjJ/qT7Flj90L7QyPozwUaAG+CVhkdDje4HLKXUYC3N/Jzkau3flHVDLQVhiHBtcimVodMjN9egYbA==",
+        "dependencies": {
+          "minimal-polyfills": "minimal-polyfills@2.2.3"
+        }
+      },
       "run-parallel@1.2.0": {
         "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
         "dependencies": {
@@ -1234,6 +1260,10 @@
           "escape-string-regexp": "escape-string-regexp@1.0.5"
         }
       },
+      "tsafe@1.7.2": {
+        "integrity": "sha512-dAPfQLhCfCRre5qs+Z5Q2a7s2CV7RxffZUmvj7puGaePYjECzWREJFd3w4XSFe/T5tbxgowfItA/JSSZ6Ma3dA==",
+        "dependencies": {}
+      },
       "tunnel-agent@0.6.0": {
         "integrity": "sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==",
         "dependencies": {
@@ -1282,6 +1312,16 @@
       "uuid@3.4.0": {
         "integrity": "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==",
         "dependencies": {}
+      },
+      "uuid@8.3.2": {
+        "integrity": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==",
+        "dependencies": {}
+      },
+      "webp-converter@2.3.3": {
+        "integrity": "sha512-2p4XvPCIQ/CbUztEFA9vdkILVrRTdMtMxFpQTxlnPc3qx14MV5wnpVvK7m6pG70QdeL+Ser0+Tp843ONwh8VbQ==",
+        "dependencies": {
+          "uuid": "uuid@8.3.2"
+        }
       },
       "webpfy@1.0.9": {
         "integrity": "sha512-5k6+y+v/hK4+svBenkqSXS3jruw6Kl+/3PQ6LdENJ7ZCH8xa4TAyjYxemmxjh96Kzoo4LuUKwfuZSyS/tky8NA==",

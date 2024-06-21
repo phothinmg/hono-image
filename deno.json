@@ -4,9 +4,11 @@
   "exports": "./src/mod.ts",
   "compilerOptions": {
     "jsx": "precompile",
-    "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx"
+    "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx",
+    "allowJs": true
   },
-  "imports": {
-    
+  "imports": {},
+  "publish": {
+    "exclude": ["test/*"]
   }
 }

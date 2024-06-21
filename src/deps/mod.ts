@@ -13,6 +13,11 @@ export { html } from "jsr:@hono/hono@^4.4.7/html";
 export type { FC } from "jsr:@hono/hono@^4.4.7/jsx";
 export { memo, useState, useEffect } from "jsr:@hono/hono@^4.4.7/jsx";
 
+export type {
+  HTMLCanvasElement,
+  CanvasRenderingContext2DSettings,
+} from "npm:evt@2.5.7/lib/types/dom.d.ts";
+
 
 
 
